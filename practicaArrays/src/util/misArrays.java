@@ -9,51 +9,51 @@ public abstract class misArrays {
 
 	public misArrays(int[] array) {
 		
-		this.array= {1,2,3,4,5,6,7,8,9,10};
+		this.array= array;
 		
 	}
 	
 	
 	
-	public int notaMedia() {
+	public float notaMedia() {
 		
 	int []array = {1,2,3,4,5,6,7,8,9,10} ;
-	
+	 float notaMedia =  0;
     for (int i = 0; i < array.length; i++) {
-    
+      notaMedia = (float)array[i]++ / array.length;
+      
 		
 	} 
 
-     return 0;
+     return  notaMedia ;
 	}
-
-public int notaMinima(int[] array) {
 	
 
- 
-    	        
-}
-    	        
-    	    	
-    	    
-    	
-
-		
+public static int notaMinima(int[] array) {
 	
-	
-
-	
-
-
-
-public int notaMaxima(int[] array) {
-	
-	
+	int menor = 0;
 	int []arrayMinimo = {1,2,3,4,5,6,7,8,9,10} ;
 	
 
     for (int i = 1; i < arrayMinimo.length; i++) {
-   	 int mayor = arrayMinimo[i] ;
+     menor = arrayMinimo[i] ;
+        if (arrayMinimo[i] < menor ) {
+            menor = arrayMinimo[i];
+        }
+    }
+  return menor;
+}
+    	        
+    	    	
+
+public int notaMaxima(int[] array) {
+	
+	int mayor = 0;
+	int []arrayMinimo = {1,2,3,4,5,6,7,8,9,10} ;
+	
+
+    for (int i = 1; i < arrayMinimo.length; i++) {
+   mayor = arrayMinimo[i] ;
         if (arrayMinimo[i] >  mayor ) {
             mayor = arrayMinimo[i];
         }
